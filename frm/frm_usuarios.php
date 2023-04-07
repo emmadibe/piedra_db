@@ -241,6 +241,9 @@
                     
                             ?>
 
+                            <button onclick="updateTable()">Update Table</button>
+
+
                         </tbody>
 
             </table>

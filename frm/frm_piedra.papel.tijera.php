@@ -78,6 +78,9 @@
 
         </div>
 
+        <button onclick="updateTable()">Update Table</button>
+
+
         <br>
 
         <div class="row">
