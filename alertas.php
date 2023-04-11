@@ -216,6 +216,39 @@ if(isset($_GET["INFORMACION"])){
 
 <?php
 
+        case "PERDISTE";
+
+?>
+
+            <div class="alert alert-dark" role="alert">
+                No adivinaste!
+            </div>
+
+<?php
+
+        break;
+
+?>
+
+<?php
+
+        case "ADIVINASTE";
+
+?>
+                     
+                <div class="alert alert-success" role="alert">
+                        <h4 class="alert-heading">EXCELENTE, <?php echo $filita["usuario"] ?>!</h4>
+                        <p>ADIVINASTE!!!</p>
+            
+                </div>
+<?php
+
+        break;
+
+?>
+
+<?php
+
         case "USUARIO_MALPASS";
 
 ?>

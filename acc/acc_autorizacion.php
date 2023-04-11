@@ -24,11 +24,11 @@
 
             //De esta manera, en los otros archivos voy a poder, escribiendo la variable $_SESSION, traerme los valores de los siguientes campos de la tabla usuarios de la base de datos piedra_db: "usuario", "usuario_id" y de "rol_id"
 
-            header("location: ../frm/frm_piedra.papel.tijera.php?INFORMACION=SESION_EXITO&usuario_id=".$_SESSION["usuario_id"]."");//Solo me dirijirá a la página del juego si hay una coincidencia entre el usuario y la contraseña.
+            header("location: ../frm/frm_elegir_juego.php?INFORMACION=SESION_EXITO&usuario_id=".$_SESSION["usuario_id"]."");//Solo me dirijirá a la página del juego si hay una coincidencia entre el usuario y la contraseña.
 
         }else{
 
-            header("location: ../index.php?INFORMACION=ERROR_CREDENCIALES");
+            header("location: ../index.php?INFORMACION=ERROR_CREDENCIALES"); // Si no hay coincidencia entre los campos usuairo y pass y los valores ingresados por el usuario en el formulario, lo reedirigirá de nuevo al index llevando la variable INFORMACION vía url con el valor string ERROR_CREDENCIALES.
 
         }
 

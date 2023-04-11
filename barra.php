@@ -100,10 +100,6 @@ $usuario_id=$_SESSION["usuario_id"];
         </ul>
       </li>
       
-    
-
-      <!-- Acordate que en html la etiqueta <ul></ul> señala un índic; y <li></li>, subíndices. Lo vimos en la segunda clase del curso de PHP. -->
-
     </ul>
 
   </div>
