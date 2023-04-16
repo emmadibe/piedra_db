@@ -23,12 +23,12 @@
                                 ".$choose.",
                                 ".$correcto.",
                                 '".$fecha."')";
-
-            $res=mysqli_query($link, $sql);
+//Guardame en la base de datos (INSERT INTO) piedra_db (lo comboqué con el include conexion.php) en la tabla cofres los campos usuario_id, modo, choose, correcto y fecha con los valores (VALUE) $usuario_id, $modo, $choose, $correcto y $fecha.
+            $res=mysqli_query($link, $sql);//Terminan de guardarse los datos. 
 
             if($res) {
 
-                header("location: ../frm/frm_juego_puertas.php?choose=$choose&correcto=$correcto&modo=$modo&usuario_id=$usuario_id");
+                header("location: ../frm/frm_juego_puertas.php?choose=$choose&correcto=$correcto&modo=$modo&usuario_id=$usuario_id"); //Me reedirige automáticamente al archivo del juego y se lleva todas esas variables vía url. Son necesarias para que no salte ningún error y para el buen funcionamiento del juego. Por ejemplo, debo llevar qué valor eligió el usuario y cuál la PC.
 
             }
 

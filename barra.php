@@ -38,6 +38,10 @@ $usuario_id=$_SESSION["usuario_id"];
         <a class="nav-link" href="../acc/acc_salir.php"><i class="bi bi-shield-fill-x">Cerrar sesión</i> <span class="sr-only">(current)</span></a>
       </li>
 
+      <li class="nav-item active">
+        <a class="nav-link" href="../frm/frm_elegir_juego.php?usuario_id=<?php echo $_SESSION["usuario_id"] ?>"><i class="bi bi-arrow-repeat">Cambiar juego</i> <span class="sr-only">(current)</span></a>
+      </li>
+
       <?php 
 
         if($_SESSION["rol_id"]==1){//O sea, si el rol_id es igual a 1(administrador) mostrame lo siguiente:
@@ -110,4 +114,4 @@ $usuario_id=$_SESSION["usuario_id"];
 ?>
 </nav>
 
-<!-- Acordate que, en el lenguaje HTML, la etiqueta <u></u> marca una lista y <li></li> los elementos de dicha lista. Lo trabajamos en la segunda clase. -->
+<!-- Acordate que, en el lenguaje HTML, la etiqueta <ul></ul> marca una lista y <li></li> los elementos de dicha lista. Lo trabajamos en la segunda clase. -->
