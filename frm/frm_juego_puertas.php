@@ -43,6 +43,7 @@
             include "../barra_cofre.php";
             include "../alertas.php";
             include "../modal_borrar_cofre.php";
+            include "../modal_editar.php";
 
             $sql = "SELECT * FROM usuarios WHERE usuario_id=".$usuario_id;
             $res = mysqli_query($link, $sql);
@@ -348,7 +349,9 @@
 
                     $('.editemos_usuario').click(function(){
 
-                    })
+                            $('#modal_editar_cofre').modal('show');
+
+                        })
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
